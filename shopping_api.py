@@ -21,14 +21,16 @@ class ShoppingContentAPI:
             discoveryServiceUrl=config.DISCOVERY_URL,
             static_discovery=False
         )
-        self.merchant_id = config.MERCHANT_ID
+        self.css_id = config.CSS_MERCHANT_ID
 
     def insert_product(self, product_data):
         try:
             start_time = datetime.now()
+            headers = {"x-css-account-id": self.css_id}
             product = self.service.products().insert(
-                merchantId=self.merchant_id,
-                body=product_data
+                merchantId=self.css_id,
+                body=product_data,
+                headers=headers
             ).execute()
             elapsed = (datetime.now() - start_time).total_seconds()
             
