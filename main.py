@@ -1,14 +1,16 @@
 from shopping_api import ShoppingContentAPI
 from data_processing import parse_xml
-from time import time
+import time
 
 def main(url):
     api = ShoppingContentAPI()
     
     products = parse_xml(url)
+    
+    print(len(products))
     for product in products:
         result = api.insert_product(product)
-        time.asleep(0.1)
+        time.sleep(0.1)
     print(result)
     
     
