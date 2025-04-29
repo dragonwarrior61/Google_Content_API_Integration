@@ -10,6 +10,7 @@ def main(url):
     print(len(products))
     for product in products:
         result = api.insert_product(product)
+        break
         time.sleep(0.1)
     print(result)
     
