@@ -1,0 +1,65 @@
+2025-04-29 20:36:59,797 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-29 20:37:04,348 - ERROR - Error inserting product None: Got an unexpected keyword argument headers
+2025-04-29 20:38:01,596 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-29 20:38:05,485 - ERROR - Error inserting product None: Got an unexpected keyword argument headers
+2025-04-29 21:03:43,997 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-29 21:03:54,165 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "Invalid JSON payload received. Unknown name "name" at 'body': Cannot find field.
+Invalid JSON payload received. Unknown name "finalName" at 'body': Cannot find field.
+Invalid JSON payload received. Unknown name "rawProviderId" at 'body': Cannot find field.
+Invalid JSON payload received. Unknown name "attributes" at 'body': Cannot find field.". Details: "[{'message': 'Invalid JSON payload received. Unknown name "name" at \'body\': Cannot find field.\nInvalid JSON payload received. Unknown name "finalName" at \'body\': Cannot find field.\nInvalid JSON payload received. Unknown name "rawProviderId" at \'body\': Cannot find field.\nInvalid JSON payload received. Unknown name "attributes" at \'body\': Cannot find field.', 'reason': 'invalid'}]">
+2025-04-30 08:25:51,404 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-30 08:25:55,825 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-04-30 08:25:57,404 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "Invalid JSON payload received. Unknown name "product_type" at 'body': Cannot find field.". Details: "[{'message': 'Invalid JSON payload received. Unknown name "product_type" at \'body\': Cannot find field.', 'reason': 'invalid'}]">
+2025-04-30 08:27:22,371 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-30 08:27:27,336 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-04-30 08:27:28,288 - WARNING - Encountered 403 Forbidden with reason "forbidden"
+2025-04-30 08:27:28,288 - ERROR - Error inserting product None: <HttpError 403 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "5579715225 is not a Merchant Center account.". Details: "[{'message': '5579715225 is not a Merchant Center account.', 'domain': 'global', 'reason': 'forbidden'}]">
+2025-04-30 08:39:38,996 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-30 08:39:45,770 - ERROR - Error inserting product None: Got an unexpected keyword argument headers
+2025-04-30 08:41:57,135 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-04-30 08:42:00,368 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-04-30 08:42:01,408 - WARNING - Encountered 403 Forbidden with reason "forbidden"
+2025-04-30 08:42:01,408 - ERROR - Error inserting product None: <HttpError 403 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "5579715225 is not a Merchant Center account.". Details: "[{'message': '5579715225 is not a Merchant Center account.', 'domain': 'global', 'reason': 'forbidden'}]">
+2025-05-01 23:26:56,225 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:27:06,162 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:27:08,441 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:27:45,918 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:27:53,534 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:27:55,925 - WARNING - Encountered 403 Forbidden with reason "forbidden"
+2025-05-01 23:27:55,926 - ERROR - Error inserting product None: <HttpError 403 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "5579715225 is not a Merchant Center account.". Details: "[{'message': '5579715225 is not a Merchant Center account.', 'domain': 'global', 'reason': 'forbidden'}]">
+2025-05-01 23:33:37,488 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:33:44,291 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:33:45,721 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:35:51,397 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:36:01,430 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:36:05,047 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:36:52,886 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:36:57,578 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:36:58,507 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:37:20,399 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:37:28,633 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:37:30,249 - ERROR - Error inserting product None: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:38:06,729 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:38:18,694 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:38:20,274 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:39:01,768 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:39:11,092 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:39:13,050 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "Invalid value at 'body.price' (type.googleapis.com/ads.shopping.contentapi.proto.frontend.v2p1.Price), "1.659,00 EUR"". Details: "[{'message': 'Invalid value at \'body.price\' (type.googleapis.com/ads.shopping.contentapi.proto.frontend.v2p1.Price), "1.659,00 EUR"', 'reason': 'invalid'}]">
+2025-05-01 23:42:21,698 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:42:28,778 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:42:30,724 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:43:42,084 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:43:54,316 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:43:58,189 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "Invalid JSON payload received. Unknown name "domain" at 'body': Cannot find field.". Details: "[{'message': 'Invalid JSON payload received. Unknown name "domain" at \'body\': Cannot find field.', 'reason': 'invalid'}]">
+2025-05-01 23:45:03,392 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:45:10,698 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:45:12,446 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:45:40,166 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:45:44,555 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:45:46,160 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:47:04,455 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:47:16,114 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:47:19,322 - ERROR - Error inserting product 37151: <HttpError 400 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5578697549/products?alt=json returned "[channel] Required parameter: channel". Details: "[{'message': '[channel] Required parameter: channel', 'domain': 'global', 'reason': 'required'}]">
+2025-05-01 23:48:26,791 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-01 23:48:37,467 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-01 23:48:41,177 - INFO - Successfully inserted product online:nl:NL:37151 in 6.06s

@@ -6,29 +6,40 @@ def parse_xml(url):
     xml_content = response.content
     root = ET.fromstring(xml_content)
     
+    ns = {'g': 'http://base.google.com/ns/1.0'}
+    
     products = []
     for item in root.findall('.//item'):
+        # print(ET.tostring(item, encoding='unicode'))
+        raw_price = item.find('g:price', ns).text if item.find('g:price', ns) is not None else None
+        
+        print(raw_price)
+        if raw_price:
+            value = raw_price.split()[0].replace('.', '').replace(',', '.')
+            currency = raw_price.split()[-1]
+            price = {"value": value, "currency": currency}
+        else:
+            price = None
+        
         product = {
-            'name': item.find('g:title').text if item.find('g:title') is not None else None,
-            'finalName': item.find('g:title').text if item.find('g:title') is not None else None,
-            'rawProviderId': 'nl',
-            'contentLanguage': item.find('g:price').text if item.find('g:price') is not None else None,
-            'feedLabel': 'nl',
-            'attributes': {
-                'product_type': item.find('g:product_type').text if item.find('g:product_type') is not None else None,
-                'link': item.find('link').text if item.find('link') is not None else None,
-                'image_link': item.find('g:image_link').text if item.find('g:image_link') is not None else None,
-                'condition': item.find('g:condition').text if item.find('g:condition') is not None else None,
-                'availability': item.find('g:availability').text if item.find('g:availability') is not None else None,
-                'price': item.find('g:price').text if item.find('g:price') is not None else None,
-                'mpn': item.find('g:mpn').text if item.find('g:mpn') is not None else None,
-                'brand': item.find('g:brand').text if item.find('g:brand') is not None else None,
-                'google_product_category': item.find('g:google_product_category').text if item.find('g:google_product_category') is not None else None,
-                'gtin': item.find('g:gtin').text if item.find('g:gtin') is not None else None,
-                'canonical_link': item.find('g:canonical_link').text if item.find('g:canonical_link') is not None else None,
-                'identifier_exists': item.find('g:identifier_exists').text if item.find('g:identifier_exists') is not None else None
-            }
+            'id': item.find('g:id', ns).text if item.find('g:id', ns) is not None else None,
+            'offerId': item.find('g:id', ns).text if item.find('g:id', ns) is not None else None,
+            'title': item.find('g:title', ns).text if item.find('g:title', ns) is not None else None,
+            'description': item.find('g:description', ns).text if item.find('g:description', ns) is not None else None,
+            'link': item.find('link').text if item.find('link') is not None else None,
+            'imageLink': item.find('g:image_link', ns).text if item.find('g:image_link', ns) is not None else None,
+            'contentLanguage': 'nl',
+            'feedLabel': 'NL',
+            'condition': item.find('g:condition', ns).text if item.find('g:condition', ns) is not None else None,
+            'availability': item.find('g:availability', ns).text if item.find('g:availability', ns) is not None else None,
+            'price': price,
+            'mpn': item.find('g:mpn', ns).text if item.find('g:mpn', ns) is not None else None,
+            'brand': item.find('g:brand', ns).text if item.find('g:brand', ns) is not None else None,
+            'google_product_category': item.find('g:google_product_category', ns).text if item.find('g:google_product_category', ns) is not None else None,
+            'gtin': item.find('g:gtin', ns).text if item.find('g:gtin', ns) is not None else None,
+            'channel': 'online'
         }
         products.append(product)
+        break
     
     return products

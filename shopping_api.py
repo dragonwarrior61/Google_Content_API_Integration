@@ -24,14 +24,19 @@ class ShoppingContentAPI:
         self.css_id = config.CSS_MERCHANT_ID
 
     def insert_product(self, product_data):
+        print(product_data)
         try:
             start_time = datetime.now()
-            headers = {"x-css-account-id": self.css_id}
-            product = self.service.products().insert(
+            request = self.service.products().insert(
                 merchantId=self.css_id,
-                body=product_data,
-                headers=headers
-            ).execute()
+                body=product_data
+            )
+            
+            # Add the CSS header to the request
+            request.headers["x-css-account-id"] = self.css_id  # Your CSS ID (5579715225)
+            
+            # Execute the request
+            product = request.execute()
             elapsed = (datetime.now() - start_time).total_seconds()
             
             logging.info(f"Successfully inserted product {product['id']} in {elapsed:.2f}s")
