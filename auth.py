@@ -9,7 +9,7 @@ import json
 def authenticate():
     creds = None
     token_file = 'token.json'
-    client_secrets_file = 'client_secrets.json'
+    client_secrets_file = 'client.json'
     
     if os.path.exists(client_secrets_file):
         with open(client_secrets_file, 'r') as f:

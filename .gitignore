@@ -1,4 +1,4 @@
 env/
-client_secrets.json
+client.json
 token.json
 config.py
