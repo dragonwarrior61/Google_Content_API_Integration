@@ -21,19 +21,20 @@ class ShoppingContentAPI:
             discoveryServiceUrl=config.DISCOVERY_URL,
             static_discovery=False
         )
-        self.css_id = config.CSS_MERCHANT_ID
+        self.css_id = config.CSS_AGGREGATOR_ID
+        self.shop_id = config.MERCHANT_ID
 
     def insert_product(self, product_data):
         print(product_data)
         try:
             start_time = datetime.now()
             request = self.service.products().insert(
-                merchantId=self.css_id,
+                merchantId=self.shop_id,
                 body=product_data
             )
             
             # Add the CSS header to the request
-            request.headers["x-css-account-id"] = self.css_id  # Your CSS ID (5579715225)
+            request.headers["x-goog-merchant-id"] = self.css_id  # Your CSS ID (5579715225)
             
             # Execute the request
             product = request.execute()
