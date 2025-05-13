@@ -2,3 +2,4 @@ env/
 client.json
 token.json
 config.py
+shopping_api.log

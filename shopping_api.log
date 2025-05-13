@@ -63,3 +63,49 @@ Invalid JSON payload received. Unknown name "attributes" at 'body': Cannot find 
 2025-05-01 23:48:26,791 - INFO - file_cache is only supported with oauth2client<4.0.0
 2025-05-01 23:48:37,467 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
 2025-05-01 23:48:41,177 - INFO - Successfully inserted product online:nl:NL:37151 in 6.06s
+2025-05-10 13:11:30,717 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-10 13:11:35,950 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-10 13:11:36,635 - ERROR - Error inserting product 37151: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2025-05-10 13:12:15,447 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-10 13:12:20,718 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-10 13:12:21,252 - ERROR - Error inserting product 37151: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2025-05-12 13:07:29,272 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 13:07:39,049 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 13:07:40,226 - ERROR - Error inserting product 37151: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2025-05-12 18:29:10,363 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 18:29:24,313 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 18:29:25,311 - ERROR - Error inserting product 37151: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+2025-05-12 18:47:32,795 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 18:47:40,971 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 18:47:44,177 - WARNING - Encountered 403 Forbidden with reason "forbidden"
+2025-05-12 18:47:44,177 - ERROR - Error inserting product 37151: <HttpError 403 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "5579715225 is not a Merchant Center account.". Details: "[{'message': '5579715225 is not a Merchant Center account.', 'domain': 'global', 'reason': 'forbidden'}]">
+2025-05-12 19:01:39,838 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 19:01:49,207 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 19:01:52,738 - INFO - Refreshing credentials due to a 401 response. Attempt 2/2.
+2025-05-12 19:01:55,299 - ERROR - Error inserting product 37151: <HttpError 401 when requesting https://shoppingcontent.googleapis.com/content/v2.1/55786797549/products?alt=json returned "User cannot access account 55786797549". Details: "[{'message': 'User cannot access account 55786797549', 'domain': 'content.ContentErrorDomain', 'reason': 'auth/account_access_denied'}]">
+2025-05-12 19:02:43,047 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 19:02:51,420 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 19:02:54,300 - INFO - Refreshing credentials due to a 401 response. Attempt 2/2.
+2025-05-12 19:02:56,689 - ERROR - Error inserting product 37151: <HttpError 401 when requesting https://shoppingcontent.googleapis.com/content/v2.1/55786797549/products?alt=json returned "User cannot access account 55786797549". Details: "[{'message': 'User cannot access account 55786797549', 'domain': 'content.ContentErrorDomain', 'reason': 'auth/account_access_denied'}]">
+2025-05-12 19:19:19,047 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 19:19:24,276 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 19:19:26,766 - INFO - Refreshing credentials due to a 401 response. Attempt 2/2.
+2025-05-12 19:19:30,464 - ERROR - Error inserting product 37151: <HttpError 401 when requesting https://shoppingcontent.googleapis.com/content/v2.1/55786797549/products?alt=json returned "User cannot access account 55786797549". Details: "[{'message': 'User cannot access account 55786797549', 'domain': 'content.ContentErrorDomain', 'reason': 'auth/account_access_denied'}]">
+2025-05-12 19:36:42,101 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 19:36:47,614 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 19:36:49,459 - INFO - Refreshing credentials due to a 401 response. Attempt 2/2.
+2025-05-12 19:36:50,799 - ERROR - Error inserting product 37151: <HttpError 401 when requesting https://shoppingcontent.googleapis.com/content/v2.1/55786797549/products?alt=json returned "User cannot access account 55786797549". Details: "[{'message': 'User cannot access account 55786797549', 'domain': 'content.ContentErrorDomain', 'reason': 'auth/account_access_denied'}]">
+2025-05-12 19:49:03,716 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 19:49:11,806 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 19:49:14,447 - ERROR - Error inserting product 37151: ('unauthorized_client: Unauthorized', {'error': 'unauthorized_client', 'error_description': 'Unauthorized'})
+2025-05-12 19:56:28,049 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 19:56:35,563 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 19:56:36,240 - ERROR - Error inserting product 37151: ('unauthorized_client: Unauthorized', {'error': 'unauthorized_client', 'error_description': 'Unauthorized'})
+2025-05-12 20:02:42,599 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 20:03:02,152 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 20:03:11,668 - INFO - Refreshing credentials due to a 401 response. Attempt 2/2.
+2025-05-12 20:03:17,912 - ERROR - Error inserting product 37151: <HttpError 401 when requesting https://shoppingcontent.googleapis.com/content/v2.1/55786797549/products?alt=json returned "User cannot access account 55786797549". Details: "[{'message': 'User cannot access account 55786797549', 'domain': 'content.ContentErrorDomain', 'reason': 'auth/account_access_denied'}]">
+2025-05-12 20:49:19,261 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-05-12 20:49:28,266 - INFO - Refreshing credentials due to a 401 response. Attempt 1/2.
+2025-05-12 20:49:31,299 - WARNING - Encountered 403 Forbidden with reason "forbidden"
+2025-05-12 20:49:31,299 - ERROR - Error inserting product 37151: <HttpError 403 when requesting https://shoppingcontent.googleapis.com/content/v2.1/5579715225/products?alt=json returned "5579715225 is not a Merchant Center account.". Details: "[{'message': '5579715225 is not a Merchant Center account.', 'domain': 'global', 'reason': 'forbidden'}]">
