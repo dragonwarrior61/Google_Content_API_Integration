@@ -42,35 +42,35 @@ def parse_xml(url):
         if numberOfOffers < 2:
             continue
         
-        if rawProvidedId is None:
-            continue
+        # if rawProvidedId is None:
+        #     continue
         
-        if title is None:
-            continue
+        # if title is None:
+        #     continue
         
-        if headlineOfferLink is None:
-            continue
+        # if headlineOfferLink is None:
+        #     continue
         
-        if headlineOfferCondition is None:
-            continue
+        # if headlineOfferCondition is None:
+        #     continue
         
-        if description is None:
-            continue
+        # if description is None:
+        #     continue
         
-        if cppLink is None:
-            continue
+        # if cppLink is None:
+        #     continue
         
-        if brand is None:
-            continue
+        # if brand is None:
+        #     continue
         
-        if googleProductCategory is None:
-            continue
+        # if googleProductCategory is None:
+        #     continue
         
-        if gtin is None:
-            continue
+        # if gtin is None:
+        #     continue
         
-        if imageLink is None:
-            continue
+        # if imageLink is None:
+        #     continue
         
         product = {
             "rawProvidedId": rawProvidedId,
