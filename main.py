@@ -12,7 +12,7 @@ def main(url):
         result = api.insert_product(product)
         break
         time.sleep(0.1)
-    print(result)
+    # print(result)
     
     
 if __name__ == "__main__":

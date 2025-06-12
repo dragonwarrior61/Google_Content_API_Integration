@@ -1,4 +1,5 @@
 from googleapiclient.discovery import build
+from google.auth.transport.requests import AuthorizedSession
 from auth import authenticate
 import config
 
@@ -15,34 +16,26 @@ class ShoppingContentAPI:
     def __init__(self):
         credentials = authenticate()
         self.service = build(
-            'content',
-            config.API_VERSION,
+            'css',
+            'v1',
             credentials=credentials,
-            discoveryServiceUrl=config.DISCOVERY_URL,
-            static_discovery=False
+            # static_discovery=False
         )
         self.css_id = config.CSS_AGGREGATOR_ID
-        self.shop_id = config.MERCHANT_ID
+        # self.shop_id = config.MERCHANT_ID
 
     def insert_product(self, product_data):
         print(product_data)
         try:
-            start_time = datetime.now()
-            request = self.service.products().insert(
-                merchantId=self.shop_id,
+            parent = f"accounts/{self.css_id}"
+                
+            request = self.service.accounts().cssProductInputs().insert(
+                parent=parent,
                 body=product_data
             )
-            
-            # Add the CSS header to the request
-            request.headers["x-goog-merchant-id"] = self.css_id  # Your CSS ID (5579715225)
-            
-            # Execute the request
-            product = request.execute()
-            elapsed = (datetime.now() - start_time).total_seconds()
-            
-            logging.info(f"Successfully inserted product {product['id']} in {elapsed:.2f}s")
-            print(f"Product inserted: {product['id']}")
-            return product
+            response = request.execute()
+            print(response)
+            return response
             
         except Exception as e:
             logging.error(f"Error inserting product {product_data.get('offerId')}: {str(e)}")
