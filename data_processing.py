@@ -105,6 +105,6 @@ def parse_xml(url):
             }
         }
         products.append(product)
-        break
+        # break
     
     return products
